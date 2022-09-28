@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto Mono;
+}
+
+:root {
+    --font-color: #D8DEE9;
+    --bg-color: #2E3440;
+    --heading-color: #D8DEE9;
+    --box-color: #434C5E;
+    --round-color: #2E3440
+}
+
+[data-theme="dark"] {
+    --font-color: #2E3440;
+    --bg-color: #D8DEE9;
+    --heading-color: #2E3440;
+    --box-color: #D8DEE9;
+    --round-color: #D8DEE9:
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-weight: bold;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+div:focus {
+  outline: 1;
+}
+
+#heading {
+  opacity: 0.5;
+  font-size: 37px;
+  padding-top: 30px;
+}
+
+#content {
+  background-color: var(--box-color);
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 24px;
+  border: 2px solid var(--box-color);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+.button{
+  position: absolute;
+  top: 10%;
+  left: 94.5%;
+  transform: translate(-50%,-50%);
+}
+
+.btn{
+  opacity: 0.5;
+  border: 2px solid var(--font-color);
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: var(--font-color);
+  text-decoration: none;
+  font-size:18px;
+  transition: 0.3s ease;
+}
+
+.btn:hover{
+  background-color: var(--font-color);
+  color: var(--box-color);
+}
+
+/*code to make the dark mode button. credit to dev.to/ananyaneogi :)*/ 
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    top: 20;
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+  top: 20;
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #434C5E;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  padding-top: 10;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #D8DEE9;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #2E3440;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
