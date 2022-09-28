@@ -61,10 +61,11 @@ div:focus {
 }
 
 .btn{
+  display: inline-block;
   opacity: 0.5;
   border: 2px solid var(--font-color);
   border-radius: 15px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   color: var(--font-color);
   text-decoration: none;
   font-size:18px;
@@ -138,4 +139,3 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
