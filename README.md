@@ -3,4 +3,4 @@
 
 :sparkles: Write Quick Notes right in your browser !
 
-:sparkles: Github pages - sid009hey.github.io/concorde
+:sparkles: Github pages - https://sid009hey.github.io/concorde
