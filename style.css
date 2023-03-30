@@ -146,3 +146,68 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+ /*responsiveness test*/
+
+@media only screen and (max-width: 700px) {
+
+	
+#content {
+  background-color: var(--box-color);
+  margin-top: 60px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 24px;
+  border: 2px solid var(--box-color);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+	}
+	
+	.slider {
+  background-color: #434C5E;
+  bottom: 10;
+  cursor: pointer;
+  left: 10;
+  position: absolute;
+  right: -10;
+  padding-top: 10;
+  top: -10;
+  transition: .4s;
+	}
+  
+  	#heading {
+  opacity: 0.5;
+  font-size: 37px;
+  padding-right: 0px;
+  padding-top: 30px;
+  margin-left: 10px;
+	}
+	
+	.button{
+	opacity:0;
+  position: absolute;
+  top: 21%;
+  left: 70%;
+  transform: translate(-50%,-50%);
+  margin-right: 10px;
+  }
+  
+  .btn{
+  margin-right: 40px;
+  }
+  
+  .ref-compiler{
+  opacity:0;
+  position: absolute;
+  top:21%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+}
+
+}
+
+}
