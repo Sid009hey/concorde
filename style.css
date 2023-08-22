@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=VT323&display=swap');
 
 *{
   margin: 0;
   padding: 0;
-  font-family: Roboto Mono;
+  font-family: VT323;
 }
 
 :root {
